@@ -25,8 +25,13 @@
 *.la
 *.a
 *.lib
+*.ipch
 
 # Executables
 *.exe
 *.out
 *.app
+
+/Debug
+/Release
+/.vs
