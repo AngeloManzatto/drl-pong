@@ -11,7 +11,7 @@ using namespace ann;
 struct DQNAgentConfig
 {
 	float learning_rate{ 0.0005f };
-	float gamma{ 0.95 };
+	float gamma{ 0.95f };
 	
 	int hidden_fc1{ 128 };
 	int hidden_fc2{ 128 };

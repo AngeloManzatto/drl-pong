@@ -22,7 +22,7 @@ DQNAgentConfig config):
 	std::vector<float> target_params = target_net_.get_parameters();
 
 	std::default_random_engine generator;
-	std::uniform_real_distribution<float> distribution(-3e-3, 3e-3);
+	std::uniform_real_distribution<float> distribution(-3e-3f, 3e-3f);
 	for (size_t i = 0; i < policy_params.size(); i++)
 	{
 		policy_params[i] = distribution(generator);
@@ -45,7 +45,7 @@ float DQNAgent::get_action(const std::vector<float>& state, float epsilon)
 	// Exploratory action
 	if (random_(engine_) < epsilon)
 	{
-		action = rand() % action_space_;
+		action = static_cast<float>(rand() % action_space_);
 
 		return action;
 	}

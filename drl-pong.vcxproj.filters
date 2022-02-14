@@ -18,34 +18,41 @@
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="pong.cpp">
+    <ClCompile Include="src\agent.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="replay_buffer.cpp">
+    <ClCompile Include="src\net.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="net.cpp">
+    <ClCompile Include="src\pong.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="agent.cpp">
+    <ClCompile Include="src\replay_buffer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="pong.h">
+    <ClInclude Include="src\agent.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="replay_buffer.h">
+    <ClInclude Include="src\ann.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="ann.h">
+    <ClInclude Include="src\net.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="net.h">
+    <ClInclude Include="src\pong.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="agent.h">
+    <ClInclude Include="src\replay_buffer.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="include\drl_pong\drl_pong.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="p1-weights.txt" />
+    <Text Include="p2-weights.txt" />
   </ItemGroup>
 </Project>

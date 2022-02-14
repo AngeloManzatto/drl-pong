@@ -1,7 +1,6 @@
 #include <iostream>
 
-#include "pong.h"
-#include "agent.h"
+#include <drl_pong\drl_pong.h>
 
 const int TRAIN = false;
 

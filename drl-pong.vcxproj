@@ -70,11 +70,11 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <IncludePath>D:\projects\c++\libs\SDL2\include;$(IncludePath)</IncludePath>
+    <IncludePath>D:\projects\c++\libs\SDL2\include;$(ProjectName)\src;$(IncludePath)</IncludePath>
     <LibraryPath>D:\projects\c++\libs\SDL2\lib\x86;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <IncludePath>D:\projects\c++\libs\SDL2\include;$(IncludePath)</IncludePath>
+    <IncludePath>$(ProjectDir)\include;D:\projects\c++\libs\SDL2\include;$(IncludePath)</IncludePath>
     <LibraryPath>D:\projects\c++\libs\SDL2\lib\x86;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -133,18 +133,23 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="agent.cpp" />
+    <ClCompile Include="src\agent.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="net.cpp" />
-    <ClCompile Include="pong.cpp" />
-    <ClCompile Include="replay_buffer.cpp" />
+    <ClCompile Include="src\net.cpp" />
+    <ClCompile Include="src\pong.cpp" />
+    <ClCompile Include="src\replay_buffer.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="agent.h" />
-    <ClInclude Include="ann.h" />
-    <ClInclude Include="net.h" />
-    <ClInclude Include="pong.h" />
-    <ClInclude Include="replay_buffer.h" />
+    <ClInclude Include="include\drl_pong\drl_pong.h" />
+    <ClInclude Include="src\agent.h" />
+    <ClInclude Include="src\ann.h" />
+    <ClInclude Include="src\net.h" />
+    <ClInclude Include="src\pong.h" />
+    <ClInclude Include="src\replay_buffer.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="p1-weights.txt" />
+    <Text Include="p2-weights.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
